@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <title>Form2</title>
+</head>
+<body>
+
+<div class="main">
+    <div class="words">
+        <p>Title</p>
+        <p>Name</p>
+        <p>Phone Number</p>
+        <p>Email Adress</p>
+        <p>Your Website</p>
+        <p>Nr.of items to order</p>
+        <p>Length</p>
+        <p>Delivery date</p>
+        <p>Time of delivery</p>
+        <p>Color of the item</p>
+    </div>
+    <div class="main">
+        <div class="section">
+            <form>
+                <input list="stuff" name="stuff" placeholder="Enter yours or select one">
+                <datalist id="stuff">
+                    <option value="Bed">
+                    <option value="Chair">
+                </datalist>
+                <br>
+                <input type="text" name="firstlastname" placeholder="John Doe">
+                <br>
+                <input type="tel" name="usrtel" placeholder="+1 23456789"> (optional)
+                <br>
+                <input type="email" name="email" placeholder="example@email.com">
+                <br>
+                <input type="url" name="website" placeholder="www.yoursite.com"> (optional)
+                <br>
+                <input type="number" name="orderamount" min="1" max="10" step="1" value="6">
+                <br>
+                <input type="range" name="length" min="0" max="100" step="10">1m
+                <br>
+                <input type="date" name="deliverydate" min="12-16-2010">
+                <br>
+                <input type="time" name="deliverytime" step="30">
+                <br>
+                <input type="color" name="color" value="#ff0000">
+            </form>
+        </div>
+        <form>
+            <input type="button" value="Submit">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
